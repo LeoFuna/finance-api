@@ -10,7 +10,17 @@ app.get('/', (req, res) => {
 
 app.get('/transactions', (req, res) => {
     res.writeHead(200, {'Content-Type': 'text/json'});
-    res.end(JSON.stringify({transactions: []}));
+    res.end(JSON.stringify({transactions: [{
+        id: 1,
+        amount: 100,
+        description: 'Deposit',
+        date: '2021-10-01T00:00:00.000Z'
+    }, {
+        id: 2,
+        amount: 50,
+        description: 'Withdraw',
+        date: '2021-10-02T00:00:00.000Z'
+    }]}));
 })
 
 app.get('/balance', (req, res) => {
