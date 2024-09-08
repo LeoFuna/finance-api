@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "node src/index.js",
-    "test": "node test/*.test.js"
+    "test": "ls test/*.test.js | xargs -n 1 node"
   },
   "keywords": [],
   "author": "",
