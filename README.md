@@ -5,4 +5,5 @@
 - [x] Criar ambiente de staging
 - [x] Criar Testes básicos de simulação real
 - [x] Criar pipeline CI/CD no GCP Cloud Build (editando o cloudbuild.yaml)
+- [x] Usar o Gateway API para expor a API através deles
 - [ ] Criar trigger ao ser criado PR apontando para `main` para gerar build

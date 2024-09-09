@@ -1,0 +1,30 @@
+swagger: "2.0"
+info:
+  title: "Minha API"
+  description: "Descrição da API"
+  version: "1.0.0"
+schemes:
+  - "https"
+consumes:
+  - "application/json"
+produces:
+  - "application/json"
+paths:
+  /:
+    get:
+      summary: "Recebe as transações"
+      operationId: "my transactions"
+      responses:
+        '200':
+          description: "OK"
+      x-google-backend:
+        address: https://finance-api-811851453817.us-central1.run.app/transactions
+  /hello:
+    get:
+      summary: "Hello World"
+      operationId: "hello"
+      responses:
+        '200':
+          description: "OK"
+      x-google-backend:
+        address: https://finance-api-811851453817.us-central1.run.app/
