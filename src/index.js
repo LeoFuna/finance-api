@@ -5,7 +5,7 @@ const app = express();
 
 app.get('/', (req, res) => {
     res.writeHead(200, {'Content-Type': 'text/plain'});
-    res.end('Hello GCP Cloud Run!!!!!');
+    res.end('Hello GCP Cloud Run!!!!! Outra branch');
 });
 
 app.get('/transactions', (req, res) => {
